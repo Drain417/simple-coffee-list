@@ -1,0 +1,101 @@
+.card {
+  display: grid;
+  margin: 50px 200px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+
+@media (max-width: 1280px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+@media (max-width:640px) {
+  grid-template-columns: 1fr;
+  }
+}
+
+.lis {
+  display: grid;
+  grid-template-areas:
+    "image image image"
+    "name . price"
+    "combine . sold-out"
+}
+
+.coffeeImage {
+  grid-area: image;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.nam {
+  font-family: 'Dm Sans', sans-serif;
+  font-size: 0.875rem;
+  text-align: left;
+  grid-area: name;
+  padding-top: 15px;
+  color: #fff;
+}
+
+.pri {
+  grid-area: price;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  background-color: #BEE3CC;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+.rat {
+  font-family: 'Dm Sans', sans-serif;
+  font-size: 0.625rem;
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+}
+
+.vot {
+  font-family: 'Dm Sans', sans-serif;
+  font-size: 0.625rem;
+  color: #6F757C;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.com {
+  grid-area: combine;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%
+}
+
+.soldOut {
+  grid-area: sold-out;
+  color: #ED735D;
+  font-size: 0.625rem;
+  align-self: center;
+}
+
+.sta {
+  display: inline-flex;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  align-items: center;
+}
+
+.popular {
+  position: absolute;
+  font-family: 'DM Sans', sans-serif;
+  font-size:0.625rem;
+  background-color: #F6C768;
+  text-align: center;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 100px;
+}

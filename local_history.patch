@@ -1,0 +1,17 @@
+Index: src/component/card.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/component/card.js b/src/component/card.js
+--- a/src/component/card.js	
++++ b/src/component/card.js	(date 1729474996473)
+@@ -20,7 +20,7 @@
+                     return coffee;
+                 })
+             );
+-        return {};
++        return {...prev, [id]: isFavorited};
+         })
+     }
+ 
